@@ -1,0 +1,98 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    border: 2px solid #585151;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    background:linear-gradient(45deg, #f2eeee, #ffdbdb);;
+}
+
+
+nav div ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.126);
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 4px 5px 10px 0 rgba(0,0,0,0.2);
+    font-size: 17px;
+}
+
+ul li:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+    transform: scale(1.25);
+    transition: transform 0.1s ease-in;
+}
+
+.buttons button{
+    font-size: 17px;
+    margin:0 10px ;
+    padding: 5px 8px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    color: white;
+    background-color: rgb(237, 105, 127);
+}
+
+.buttons button:hover{
+    /* font-size: 19px; */
+    transform: scale(1.15);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+
+.main{
+    height: 80vh;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.programs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main span{
+    z-index: 10;
+}
+.main img{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 1;
+    position: absolute;
+    object-fit: contain;
+}
+
+.card-container{
+    display: flex;
+    overflow: scroll;
+}
+
+.card-container .card{
+    margin: 10px;
+}
